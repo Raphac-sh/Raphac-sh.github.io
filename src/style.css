@@ -1,4 +1,7 @@
-/*Généralités*/
+/*Global*/
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 
 html {
   scroll-behavior: smooth;
@@ -6,10 +9,10 @@ html {
 
 body {
   color: #fff;
-  background: url(images/background.jpg) fixed no-repeat;
+  background: #000;
   background-size: 100%;
 
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: 'Source Code Pro', monospace;
 
   margin: 0;
   padding: 0;
@@ -22,13 +25,11 @@ a {
   color: inherit;
 }
 
-/*Utilitaires*/
+/*Classes*/
 
 .big-title,
 .small-title {
   margin: 5px 0;
-
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .big-title {
@@ -114,20 +115,20 @@ a {
 
 /*Header*/
 .header {
+  background-color: #111;
   transition: all 1s;
 
-  position: relative;
-}
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 300px;
 
-.banner {
-  width: 100%;
-  height: auto;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .titles {
-  position: absolute;
-  top: 120px;
-  left: 20px;
+  padding: 20px;
+  margin-left: 30px;
 }
 
 .titles img {
@@ -139,14 +140,10 @@ a {
 
 /*Menu*/
 .menu {
-  background-color: #000;
-
-  position: relative;
-  bottom: 30px;
+  font-size: 20px;
+  background-color: #222;
 
   padding: 0 40px;
-
-  margin-left: 30px;
 
   border-radius: 5px;
   width: 50%;
@@ -189,7 +186,7 @@ a {
 /*Footer*/
 
 .footer {
-  background-color: #000;
+  background-color: #111;
   padding: 20px;
   text-align: center;
   font-size: 20px;

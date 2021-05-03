@@ -1,15 +1,7 @@
+let head = document.querySelector('.header');
+let boxes = document.querySelectorAll('.text, .box-img');
+
 document.addEventListener('scroll', (e) => {
-  let arr = document.querySelector('.arrow-nav');
-  let head = document.querySelector('.header');
-  let boxes = document.querySelectorAll('.text, .box-img');
-
-  // Navigation arrow Animation
-  if (window.scrollY <= 100) {
-    arr.style.transform = 'scale(1)';
-  } else {
-    arr.style.transform = 'scale(0)';
-  }
-
   // Header Animation
   if (window.scrollY <= 350) {
     head.style.filter = 'opacity(100%)';
