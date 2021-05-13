@@ -1,7 +1,7 @@
 /*Global*/
 
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
 
 html {
   scroll-behavior: smooth;
@@ -12,7 +12,7 @@ body {
   background: #000;
   background-size: 100%;
 
-  font-family: 'Source Code Pro', monospace;
+  font-family: "Source Code Pro", monospace;
 
   margin: 0;
   padding: 0;
@@ -21,7 +21,6 @@ body {
 }
 
 a {
-  text-decoration: none;
   color: inherit;
 }
 
@@ -123,7 +122,9 @@ a {
   align-items: center;
   height: 300px;
 
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
+
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .titles {
@@ -168,6 +169,7 @@ a {
   width: 100%;
 
   text-align: center;
+  text-decoration: none;
 }
 
 .menu ul a:hover {
