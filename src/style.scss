@@ -1,30 +1,32 @@
 /*Global*/
 
-@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   color: #fff;
   background: #000;
 
-  font-family: "Source Code Pro", monospace;
+  font-family: 'Source Code Pro', monospace;
 }
 
 a {
   color: inherit;
 }
 
-h1 {
+h2 {
   font-size: calc(20px + 0.75vw);
   font-weight: bold;
   margin-left: 100px;
 }
 
-/*Classes*/
-
-.title {
+h1 {
   font-size: 50px;
-  margin: 0;
+  font-weight: bold;
 }
 
 .text {
@@ -66,8 +68,8 @@ h1 {
   text-align: center;
 
   .text {
-      min-width: 150px;
-      width: 33%;
+    min-width: 150px;
+    width: 33%;
   }
 
   .box-img {
@@ -87,7 +89,7 @@ h1 {
   align-items: center;
   height: 300px;
 
-  font-family: "Josefin Sans", sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .titles {
@@ -110,7 +112,7 @@ h1 {
   padding: 0 40px;
 
   border-radius: 5px;
-  
+
   ul {
     list-style: none;
 
@@ -150,7 +152,8 @@ h1 {
 
 /*Footer*/
 
-.footer {
+footer {
+  line-height: 2em;
   background-color: #111;
   padding: 20px;
   text-align: center;
@@ -161,7 +164,9 @@ h1 {
 }
 
 @media (min-width: 1015px) {
-    .box, .box-columns, .menu ul {
-        flex-wrap: nowrap;
-    }
+  .box,
+  .box-columns,
+  .menu ul {
+    flex-wrap: nowrap;
+  }
 }

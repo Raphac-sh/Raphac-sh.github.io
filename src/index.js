@@ -1,6 +1,6 @@
-let boxes = document.querySelectorAll(".text, .box-img");
+let boxes = document.querySelectorAll('.text, .box-img');
 
-document.addEventListener("scroll", () => {
+document.addEventListener('scroll', () => {
   // Animation for every box
   for (elem of boxes) {
     let pos =
@@ -9,9 +9,9 @@ document.addEventListener("scroll", () => {
       window.innerHeight;
 
     if (window.scrollY >= pos) {
-      elem.style.filter = "opacity(100%)";
+      elem.style.filter = 'opacity(100%)';
     } else {
-      elem.style.filter = "opacity(0%)";
+      elem.style.filter = 'opacity(0%)';
     }
   }
 });
