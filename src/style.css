@@ -10,15 +10,17 @@ a {
   color: inherit; }
 
 h1 {
-  font-size: calc(20px + 1vw);
-  font-weight: bold; }
+  font-size: calc(20px + 0.75vw);
+  font-weight: bold;
+  margin-left: 100px; }
 
 /*Classes*/
 .title {
-  font-size: 50px; }
+  font-size: 50px;
+  margin: 0; }
 
 .text {
-  font-size: calc(12px + 1vw);
+  font-size: calc(12px + 0.75vw);
   transition: all 1s;
   filter: opacity(0);
   margin: calc(10px + 2vw); }
@@ -35,13 +37,14 @@ h1 {
 .box-img {
   transition: all 1s;
   margin: 10px auto;
-  max-height: 300px;
+  max-height: 200px;
   filter: opacity(0); }
 
 .box-columns {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  margin-bottom: 300px;
   text-align: center; }
   .box-columns .text {
     min-width: 150px;
@@ -106,5 +109,9 @@ h1 {
   font-size: 20px; }
   .footer a {
     text-decoration: underline; }
+
+@media (min-width: 1015px) {
+  .box, .box-columns, .menu ul {
+    flex-wrap: nowrap; } }
 
 /*# sourceMappingURL=style.css.map */

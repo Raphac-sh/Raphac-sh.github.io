@@ -15,18 +15,20 @@ a {
 }
 
 h1 {
-  font-size: calc(20px + 1vw);
+  font-size: calc(20px + 0.75vw);
   font-weight: bold;
+  margin-left: 100px;
 }
 
 /*Classes*/
 
 .title {
   font-size: 50px;
+  margin: 0;
 }
 
 .text {
-  font-size: calc(12px + 1vw);
+  font-size: calc(12px + 0.75vw);
   transition: all 1s;
   filter: opacity(0);
   margin: calc(10px + 2vw);
@@ -49,7 +51,7 @@ h1 {
 
   margin: 10px auto;
 
-  max-height: 300px;
+  max-height: 200px;
 
   filter: opacity(0);
 }
@@ -58,6 +60,8 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+
+  margin-bottom: 300px;
 
   text-align: center;
 
@@ -154,4 +158,10 @@ h1 {
   a {
     text-decoration: underline;
   }
+}
+
+@media (min-width: 1015px) {
+    .box, .box-columns, .menu ul {
+        flex-wrap: nowrap;
+    }
 }
