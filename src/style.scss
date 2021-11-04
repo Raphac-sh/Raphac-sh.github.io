@@ -1,4 +1,4 @@
-/*Global*/
+// Global
 
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
@@ -8,7 +8,7 @@ html {
 }
 
 body {
-  color: #fff;
+  color: #FFF;
   background: #000;
 
   font-family: 'Source Code Pro', monospace;
@@ -16,6 +16,7 @@ body {
 
 a {
   color: inherit;
+  text-decoration: underline;
 }
 
 h2 {
@@ -29,6 +30,8 @@ h1 {
   font-weight: bold;
 }
 
+// Generics
+
 .text {
   font-size: calc(12px + 0.75vw);
   transition: all 1s;
@@ -40,11 +43,11 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
 
   margin: calc(20px + 5vw);
   margin-bottom: 300px;
 
-  background-color: #000;
   flex-direction: row;
 }
 
@@ -62,6 +65,7 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  align-items: center;
 
   margin-bottom: 300px;
 
@@ -78,7 +82,8 @@ h1 {
   }
 }
 
-/*Header*/
+// Header
+
 .header {
   background-color: #111;
   transition: all 1s;
@@ -103,7 +108,7 @@ h1 {
   }
 }
 
-/*Menu*/
+// Menu
 
 .menu {
   font-size: 20px;
@@ -142,7 +147,7 @@ h1 {
   }
 }
 
-/*Main*/
+// Main
 
 .main {
   margin-top: 300px;
@@ -150,7 +155,7 @@ h1 {
   margin-bottom: 300px;
 }
 
-/*Footer*/
+// Footer
 
 footer {
   line-height: 2em;
@@ -163,7 +168,7 @@ footer {
   }
 }
 
-@media (min-width: 1015px) {
+@media only screen and (min-width: 1015px) {
   .box,
   .box-columns,
   .menu ul {
